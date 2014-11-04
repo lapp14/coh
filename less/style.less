@@ -1,10 +1,4 @@
-@background-main: #6c8254;
-@background-content: #f5f5f1;
-@background-header: #820000;
-@link-main: #820000;
-@link-hover:  #6c8254;
-@navbarInverseBackground:                #292724;
-@grayLight:             #c4c0b5;
+@import "variables.less";
 
 div {
   
@@ -114,8 +108,13 @@ h2, h3, h4 {
 }
 
 /* Navbar */
+.navbar {
+  margin: 0;
+}
+
 .navbar-inner {    
     font-family: 'Lato', sans-serif;
+    padding-left: 60px;
     border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
