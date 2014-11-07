@@ -5,11 +5,14 @@
 
 // Global values
 // --------------------------------------------------
-@background-main: #88bf0b;
-@background-content: #f5f5f1;
-@background-header: #940303;
-@link-main: #40b0e9;
-@link-hover:  #88bf0b;
+@background-main: #c8db72;
+@background-content: #f4f4f4;
+@background-header: #ffffff;
+@background-footer: @navbarInverseBackground;
+@link-main: #61c6c8;
+@link-visited: #41ae89;
+@link-hover: lighten(@link-main, 10%); 
+
 
 
 
@@ -26,11 +29,11 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
+@blue:                  #61c6c8;
+@blueDark:              #396e6f;
+@green:                 #41ae89;
 @red:                   #9d261d;
-@yellow:                #ffc40d;
+@yellow:                #c8db72;
 @orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
@@ -201,8 +204,8 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #292724;
-@navbarInverseBackgroundHighlight:       #3d3b38;
+@navbarInverseBackground:                #4c4945;
+@navbarInverseBackgroundHighlight:       lighten(@navbarInverseBackground, 10%);
 @navbarInverseBorder:                    #252525;
 
 @navbarInverseText:                      @grayLight;

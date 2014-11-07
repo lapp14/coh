@@ -10,7 +10,7 @@ a {
 }
 
 a:visited {
-  color: darken(@link-main, 8%);
+  color: @link-visited;
   text-decoration: none;
 }
 
@@ -20,13 +20,10 @@ a:hover {
 }
 
 .a-inverse {
-  color: @link-hover;
-  font-weight: normal;
   padding: 0 15px;
 }
 
 .a-inverse:visited {
-  color: darken(@link-hover, 8%);
   font-weight: normal;
 }
 
@@ -51,8 +48,19 @@ h2, h3, h4 {
 .service-pane-top {
   height: 200px;
   padding: 5px 15px;
-  background-color: @navbarInverseBackground;
-  color: @grayLight;
+  color: @background-content;
+}
+
+.blueDark {
+  background-color: @blueDark;
+}
+
+.blue {
+  background-color: darken(@blue, 10%);
+}
+
+.green {
+  background-color: @green;
 }
 
 .service-pane-top:hover {
@@ -78,8 +86,7 @@ h2, h3, h4 {
 
 /* Content Divs */
 .header {
-    padding: 12px 25px;
-    height: 80px; 
+    padding: 8px 15px; 
     color: @grayDark;
     background-color: @background-header;   
 }
@@ -103,7 +110,7 @@ h2, h3, h4 {
   display: inline-block;
   text-align: center;
   min-height: 100px;
-  background-color: @navbarInverseBackground;
+  background-color: @background-footer;
   color: @grayLight;
 }
 
@@ -120,3 +127,7 @@ h2, h3, h4 {
     -webkit-border-radius: 0 !important;
 }
 
+/* Images */
+.img-facebook {
+  float: right;
+}
