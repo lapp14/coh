@@ -4,6 +4,10 @@ div {
   
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 a {
   color: @link-main;
   font-weight: bold;
@@ -23,10 +27,6 @@ a:hover {
   padding: 0 15px;
 }
 
-.a-inverse:visited {
-  font-weight: normal;
-}
-
 body {
   background: @background-main;
 }
@@ -37,6 +37,15 @@ h1 {
 
 h2, h3, h4 {
   font-family: 'Lato', sans-serif;
+}
+
+table {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+td {
+  padding: 1px 5px;
 }
 
 /* Service Pane */
@@ -63,6 +72,15 @@ h2, h3, h4 {
   background-color: @green;
 }
 
+.sage {
+  background-color: @sage;
+}
+
+.brown {
+  background-color: @navbarInverseBackground;
+}
+
+
 .service-pane-top:hover {
   height: 200px;
   padding: 5px 15px;
@@ -86,13 +104,13 @@ h2, h3, h4 {
 
 /* Content Divs */
 .header {
-    padding: 8px 15px; 
+    padding: 0 15px; 
     color: @grayDark;
     background-color: @background-header;   
 }
 
 .content {
-    min-height: 800px; 
+    min-height: 700px; 
     background-color: @background-content;   
     font-size: 1.3em; 
     font-family: 'Lora', serif;
@@ -114,6 +132,9 @@ h2, h3, h4 {
   color: @grayLight;
 }
 
+#map-container {
+}
+
 /* Navbar */
 .navbar {
   margin: 0;
@@ -129,5 +150,12 @@ h2, h3, h4 {
 
 /* Images */
 .img-facebook {
+  margin: 15px 8px;
   float: right;
+}
+
+/* Text Effects */
+.note {
+  font-size: 0.7em;
+  font-style: italic;
 }
