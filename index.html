@@ -17,7 +17,9 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12 header">
-				<img src="img/logo_main.png">
+				<img src="img/logo_main.png" id="desktop-logo">
+				<img src="img/logo_mobile.png" id="mobile-logo" class="display: none">
+
 				<a href="https://www.facebook.com/cohjoanne" target="_blank">
 					<img src="img/facebook.png" class="img-facebook" alt="Like us on Facebook!">
 				</a>
@@ -25,11 +27,22 @@
 		</div>
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
-				<ul class="nav">
+				<!-- Desktop menu -->
+				<ul class="nav" id="desktop-menu">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="services/">Services</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
+
+				<!-- Mobile menu -->
+				<div class="dropdown" id="mobile-menu" style="display: none">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="services/">Services</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
 			</div>	
 		</div>
 		<div class="content">
@@ -65,10 +78,15 @@
 				| <a href="services/" class="a-inverse">Services</a> 
 				| <a href="contact.html" class="a-inverse">Contact Us</a> |
 				</p>
+				<p>
+					
+				</p>
 			</div>
 		</div>
 	</div>
 
 <script src="js/lib/jquery-1.11.1.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/responsive.js"></script>
 </body>
 </html>
