@@ -1,7 +1,7 @@
 @import "variables.less";
 
 div {
-  
+
 }
 
 p {
@@ -23,8 +23,25 @@ a:hover {
   text-decoration: none;
 }
 
+a:active {
+  text-decoration: none;
+}
+
 .a-inverse {
   padding: 0 15px;
+}
+
+
+.dropdown a {
+  color: @grayLight;
+}
+
+.dropdown a:hover {
+  color: @white;
+}
+
+.dropdown a:active {
+  color: @navbarInverseLinkColorHover;
 }
 
 body {
@@ -48,17 +65,6 @@ td {
   padding: 1px 5px;
 }
 
-/* Service Pane */
-.service-pane {
-  margin-top: 15px;
-  padding: 0px;
-}
-
-.service-pane-top {
-  height: 200px;
-  padding: 5px 15px;
-  color: @background-content;
-}
 
 .blueDark {
   background-color: @blueDark;
@@ -80,16 +86,35 @@ td {
   background-color: @navbarInverseBackground;
 }
 
+/* text highlights */
+::selection { /* Code for Firefox */
+    color: @grayLight;
+    background: @navbarInverseBackground;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: @grayLight;
+    background: @navbarInverseBackground;
+}
+
+/* service pane */
+.service-pane {
+  margin-top: 15px;
+  padding: 0px;
+}
+
+.service-pane-top {
+  padding: 10px 0 15px 15px;
+  color: @background-content;
+}
 
 .service-pane-top:hover {
-  height: 200px;
-  padding: 5px 15px;
+  padding: 10px 0 15px 15px;
   background-color: @grayLight;
   color: @navbarInverseBackground;
 }
 
 .service-pane-bottom:hover + .service-pane-top {
-  height: 200px;
   padding: 5px 15px;
   background-color: @grayLight;
   color: @navbarInverseBackground;
@@ -147,6 +172,8 @@ td {
 
 .dropdown {
   padding: 9px 6px;
+  font-size: 1.2em;
+  float: right;
 }
 
 /* Images */
@@ -159,4 +186,10 @@ td {
 .note {
   font-size: 0.7em;
   font-style: italic;
+}
+
+
+/* Mobile IDs */
+#mobile-logo, #mobile-menu {
+  display: none;
 }

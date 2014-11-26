@@ -17,7 +17,9 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12 header">
-				<img src="../img/logo_main.png">
+				<img src="../img/logo_main.png" id="desktop-logo">
+				<img src="../img/logo_mobile.png" id="mobile-logo">
+
 				<a href="https://www.facebook.com/cohjoanne" target="_blank">
 					<img src="../img/facebook.png" class="img-facebook" alt="Like us on Facebook!">
 				</a>
@@ -26,11 +28,22 @@
 
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
-				<ul class="nav">
+				<!-- Desktop menu -->
+				<ul class="nav" id="desktop-menu">
 					<li><a href="../index.html">Home</a></li>
 					<li class="active"><a href="#">Services</a></li>
 					<li><a href="../contact.html">Contact Us</a></li>
 				</ul>
+
+				<!-- Mobile menu -->
+				<div class="dropdown" id="mobile-menu">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="../index.html">Home</a></li>
+						<li class="active"><a href="#">Services</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+				</div>
 			</div>	
 		</div>
 
@@ -66,6 +79,7 @@
 							<div class="service-pane">
 								<div class="service-pane-top blueDark">
 									<h4>Auricular Acupuncture</h4>
+									<img src="../img/services/auricular_acupuncture.png" alt="Aricular Acupuncture">
 								</div>
 							</div>
 						</a>
@@ -133,14 +147,16 @@
 				<p>Circle of Health</p>
 				<p>(905) 371-3331</p>
 				<p>
-				| <a href="../index.html" class="a-inverse">Home</a> 
-				| <a href="#" class="a-inverse">Services</a> 
-				| <a href="../contact.html" class="a-inverse">Contact Us</a> |
+					<a href="../index.html" class="a-inverse">Home</a> 
+					<a href="#" class="a-inverse">Services</a> 
+					<a href="../contact.html" class="a-inverse">Contact Us</a>
 				</p>
 			</div>
 		</div>
 	</div>
 
 <script src="../js/lib/jquery-1.11.1.min.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/responsive.js"></script>
 </body>
 </html>

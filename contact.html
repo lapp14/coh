@@ -11,13 +11,14 @@
 	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/maps.css" rel="stylesheet">
 </head>	
-<body onresize="resizeMap()">
+<body>
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12 header">
-				<img src="img/logo_main.png">
+				<img src="img/logo_main.png" id="desktop-logo">
+				<img src="img/logo_mobile.png" id="mobile-logo">
+
 				<a href="https://www.facebook.com/cohjoanne" target="_blank">
 					<img src="img/facebook.png" class="img-facebook" alt="Like us on Facebook!">
 				</a>
@@ -25,11 +26,23 @@
 		</div>
 		<div class="navbar navbar-inverse">
 			<div class="navbar-inner">
-				<ul class="nav">
+				<!-- Desktop menu -->
+				<ul class="nav" id="desktop-menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="services/">Services</a></li>
 					<li class="active"><a href="#">Contact Us</a></li>
 				</ul>
+
+				<!-- Mobile menu -->
+				<div class="dropdown" id="mobile-menu">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="services/">Services</a></li>
+						<li class="active"><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				
 			</div>	
 		</div>
 		<div class="content">
@@ -39,28 +52,14 @@
 						<h2>Contact Us</h2>
 						<p>
 							Here is a sentence or two about how to contact about services or scheduling appointments.
-
-
-							<table>
-								<tr>
-									<td>
-										Phone:
-									</td>
-									<td>
-										(905) 371-3331	
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Email:
-									</td>
-									<td>
-										reception@circleofhealth.ca
-									</td>
-								</tr>
-							</table>
 						</p>
-							
+						<p>
+							Phone: (905) 371-3331	
+						</p>
+						<p>
+							Email: reception@circleofhealth.ca
+						</p>
+
 
 						<h3>Our Location</h3>
 						<p>
@@ -69,7 +68,7 @@
 						<p>
 							{image of storefront}
 						</p>
-
+ 	
 						<p>
 							6100 Thorold Stone Rd. Unit #4<br/>
 							Niagara Falls<br/>
@@ -118,26 +117,18 @@
 			<div class="span12 footer-padding">
 				<p>Circle of Health</p>
 				<p>
-				| <a href="#" class="a-inverse">Home</a> 
-				| <a href="services/" class="a-inverse">Services</a> 
-				| <a href="contact.html" class="a-inverse">Contact Us</a> |
+					<a href="#" class="a-inverse">Home</a> 
+					<a href="services/" class="a-inverse">Services</a> 
+					<a href="contact.html" class="a-inverse">Contact Us</a> 
 				</p>
 			</div>
 		</div>
 	</div>
 
 <script src="js/lib/jquery-1.11.1.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-	var resizeMap = function() {
-		var width = $("#map-container").width();
-
-		$("#map").width(width);
-		$("#map").height(height);
-	}
-
-	$(document).ready(resizeMap);
-	$(window).resize(resizeMap);
-</script>
+<script src="js/responsiveMap.js"></script>
+<script src="js/responsive.js"></script>
 </body>
 </html>
