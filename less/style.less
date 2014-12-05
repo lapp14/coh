@@ -11,9 +11,15 @@ p {
 a {
   color: @link-main;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:visited {
+  color: @link-visited;
+  text-decoration: none;
+}
+
+a:active {
   color: @link-visited;
   text-decoration: none;
 }
@@ -129,7 +135,7 @@ td {
 
 .content {
   min-height: 600px; 
-  padding-bottom: 30px;
+  padding-bottom: 30px; 
   background-color: @background-content;   
   font-size: 1.3em; 
   font-family: 'Lora', serif;
