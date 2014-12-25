@@ -89,9 +89,15 @@ li {
 }
 
 .service-pane-top {
-  height: 200px;
   padding: 5px 15px;
   color: @background-content;
+}
+
+.service-pane-top img{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: block;
+  margin: auto;
 }
 
 .blueDark {
@@ -115,10 +121,9 @@ li {
 }
 
 .service-pane-top:hover {
-  height: 200px;
   padding: 5px 15px;
-  background-color: @grayLight;
-  color: @navbarInverseBackground;
+  background-color: @navbarInverseBackground;
+  color: @grayLight;
 }
 
 .service-pane-bottom:hover + .service-pane-top {
@@ -166,6 +171,15 @@ li {
   color: @grayLight;
 }
 
+.company {
+  background: @navbarInverseBackground;
+  color: @grayLight;
+  font-size:  0.8em;
+  padding: 10px;
+  margin-bottom: 15px;
+  min-height: 151px;
+}
+
 .product {
   background: @navbarInverseBackground;
   color: @grayLight;
@@ -175,11 +189,19 @@ li {
   min-height: 141px;
 }
 
+
+.company img {
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
 .product img {
   float: left;
   margin-right: 10px;
   width: 123px;
   height: 141px;
+  padding-bottom: 10px;
 }
 
 /* Navbar */
