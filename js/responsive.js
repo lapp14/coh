@@ -1,6 +1,6 @@
 var mobileMenuWidth = 550;
 var mobileLogoWidth = 655;
-var fontSize = {'small' : '1em', 'large' : '1.3em'};
+var fontSize = {'small' : '1.1em', 'large' : '1.3em'};
 
 $(document).ready(function() {
 	$('.dropdown-toggle').dropdown();
